@@ -1,0 +1,17 @@
+﻿
+<div>
+        <h1>Image Cropper And Resizer App</h1>
+</div>
+<br /></br.>
+<form method="post" enctype="multipart/form-data" asp-controller="Image" asp-action="Index">
+    <input type="file" name="file" accept=".jpg,.bmp,.png" />
+    <input type="submit" value="Start Application" />
+
+
+</form>
+
+
+@if (TempData["message"]!= null)
+{
+    <p>@TempData["message"]</p>
+} 
